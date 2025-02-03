@@ -1,0 +1,94 @@
+:root {
+    --main-color: #000000;
+    --secondary-color: #e2aad5;
+    --font-size-large: 24px;
+}
+
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #bad6e9;
+    margin: 20px;
+}
+
+h1 {
+    color: var(--main-color);
+    font-size: var(--font-size-large);
+    text-align: center;
+}
+
+h2 {
+    color: #000000;
+    font-size: var(--font-size-large);
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    font-size: 14px;
+    border-top-left-radius: 10px;
+}
+
+/* Box Model */
+.box {
+    width: 500px;
+    padding: 20px;
+    margin: 20px auto;
+    border: 3px solid #ffffff;
+    background-color: #bad6e9;
+    text-align: center;
+}
+
+/* Flexbox Section */
+
+.flex-container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.flex-item {
+    background-color: var(--secondary-color);
+    padding: 20px;
+    width: 200px;
+    color: white;
+    text-align: center;
+}
+
+
+/* Grid Layout */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.grid-item {
+    background-color: rgb(156, 141, 209);
+    padding: 20px;
+    text-align: center;
+    color: white;
+}
+
+/* Positioning */
+.relative-box {
+    position: relative;
+    background-color: lightyellow;
+    padding: 30px;
+    margin-top: 20px;
+}
+
+.absolute-box {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 10px;
+}
